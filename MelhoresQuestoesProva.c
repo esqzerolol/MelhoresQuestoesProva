@@ -4,7 +4,7 @@
 // Coloque aqui o valor de cada questao (pi)
 int ValorDeCadaQuestao[]  = {3, 2, 4, 5, 1, 6};
 // Coloque aqui o valor de cada atraso caso faca a questao (fi)
-int AtrasoDeCadaQuestao[] = {0, 1, 2, 2, 1, 1};
+int AtrasoDeCadaQuestao[] = {0, 1, 2, 5, 1, 1};
 
 int NumQuestoes, Contador;
 
@@ -66,6 +66,7 @@ int main () {
     for (int i = 0; i < NumQuestoes; i++){
         if (VetorDeQuestoesASeFazer[i]) printf ("%d ", i+1);
     } printf ("\n");
+    printf ("Para ganhar: %d Pontos\n", VetorDePontos[0]);
 
     // Liberando o espaco alocado nos dois vetores
     free(VetorDePontos);
